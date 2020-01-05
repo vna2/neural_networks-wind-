@@ -6,13 +6,19 @@ import os
 import csv
 import sys
 
-if (len(sys.argv) != 3):
-	print("usage: python3 new_representation.py –i <input file>")
+if (len(sys.argv) != 5):
+	print("usage: python3 new_representation.py –i <input file> -c <config file>")
 	exit()
 else:
-	data_file = sys.argv[2]
+	for i, arg in enumerate(sys.argv):
+		print(i, sys.argv[i])
+		if arg == "-i":
+			data_file = sys.argv[i + 1]
+		elif arg == "-c":
+			config_file = sys.argv[i + 1]
 
-model1 = load_model('./data/WindDenseNN.h5')
+
+model1 = load_model(config_file)
 model2 = Model(model1.input, model1.layers[0].output)
 model2.summary()
 

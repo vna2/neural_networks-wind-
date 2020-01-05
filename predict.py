@@ -4,8 +4,8 @@ from keras import layers, optimizers, losses, metrics
 from keras.models import load_model
 import sys, csv
 
-if (len(sys.argv) != 3):
-	print("usage: python3 new_representation.py –i <input file>")
+if (len(sys.argv) != 7):
+	print("usage: python3 predict.py –i <input file> -a <actual file> -c <config file>")
 	exit()
 else:
 	for i, arg in enumerate(sys.argv):
@@ -14,12 +14,15 @@ else:
 			data_file = sys.argv[i + 1]
 		elif arg == "-a":
 			actual_file = sys.argv[i + 1]
+		elif arg == "-c":
+			config_file = sys.argv[i + 1]
 
-model = load_model('./data/WindDenseNN.h5')
+#model = load_model('./data/WindDenseNN.h5')
+model = load_model(config_file)
 model.summary()
 
 data = pd.read_csv(data_file).iloc[:, 1:]
-labels = pd.read_csv('./data/actual.csv').iloc[:, 1:]
+labels = pd.read_csv(actual_file).iloc[:, 1:]
 
 #mean_absolute_error
 model.compile(optimizer=optimizers.RMSprop(0.01), loss='mean_absolute_error',
