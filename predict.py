@@ -9,7 +9,6 @@ if (len(sys.argv) != 7):
 	exit()
 else:
 	for i, arg in enumerate(sys.argv):
-		print(i, sys.argv[i])
 		if arg == "-i":
 			data_file = sys.argv[i + 1]
 		elif arg == "-a":
@@ -17,9 +16,9 @@ else:
 		elif arg == "-c":
 			config_file = sys.argv[i + 1]
 
-#model = load_model('./data/WindDenseNN.h5')
 model = load_model(config_file)
 model.summary()
+
 
 data = pd.read_csv(data_file).iloc[:, 1:]
 labels = pd.read_csv(actual_file).iloc[:, 1:]
@@ -41,7 +40,7 @@ model.compile(optimizer=optimizers.RMSprop(0.01), loss='mean_squared_error',
 
 results = model.predict(data, batch_size=32)
 
-with open('predicted.csv', 'w') as f, open(data_file, "r") as nn_repr:	
+with open('predicted.csv', 'w+') as f, open(data_file, "r") as nn_repr:	
 	values = csv.reader(nn_repr, delimiter=',')
 	f.write(f'MAE: {mae} MAPE: {mape} MSE: {mse}\n')
 	for (result, value) in zip(results, values):
@@ -53,3 +52,4 @@ with open('predicted.csv', 'w') as f, open(data_file, "r") as nn_repr:
 				f.write(',')
 			i = i + 1	
 		f.write('\n')
+	f.close()
