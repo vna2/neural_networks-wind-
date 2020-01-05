@@ -1,0 +1,7 @@
+Algorithm: I1A1U1
+CLUSTER-1 {size: 6209,  centroid: 2017-10-23&22:00:00}
+CLUSTER-2 {size: 6362,  centroid: 2016-12-24&15:00:00}
+CLUSTER-3 {size: 4977,  centroid: 2016-11-17&14:00:00}
+CLUSTER-4 {size: 6440,  centroid: 2018-09-16&23:00:00}
+clustering_time: 223.612
+Silhouette: [0.139379, 0.186497, 0.215005, 0.222032, 0.190728]

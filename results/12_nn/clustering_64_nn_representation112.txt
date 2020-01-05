@@ -1,0 +1,15 @@
+Algorithm: I1A1U1
+CLUSTER-1 {size: 2306,  centroid: 2018-04-14&07:00:00}
+CLUSTER-2 {size: 1251,  centroid: 2018-03-13&01:00:00}
+CLUSTER-3 {size: 3141,  centroid: 2016-11-24&16:00:00}
+CLUSTER-4 {size: 744,  centroid: 2016-05-03&02:00:00}
+CLUSTER-5 {size: 859,  centroid: 2017-04-11&07:00:00}
+CLUSTER-6 {size: 1953,  centroid: 2016-04-04&13:00:00}
+CLUSTER-7 {size: 4520,  centroid: 2018-01-05&09:00:00}
+CLUSTER-8 {size: 891,  centroid: 2016-06-26&01:00:00}
+CLUSTER-9 {size: 506,  centroid: 2016-06-05&21:00:00}
+CLUSTER-10 {size: 2831,  centroid: 2018-08-30&05:00:00}
+CLUSTER-11 {size: 1559,  centroid: 2018-05-01&07:00:00}
+CLUSTER-12 {size: 3427,  centroid: 2017-03-12&19:00:00}
+clustering_time: 54.4491
+Silhouette: [0.143438, 0.243979, 0.231515, 0.236221, 0.122172, 0.18143, 0.14452, 0.265504, 0.209873, 0.213645, 0.0884963, 0.177088, 0.188157]
