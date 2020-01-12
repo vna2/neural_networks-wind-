@@ -1,7 +1,8 @@
 import numpy as np
 import pandas as pd
 from keras import layers, optimizers, losses, metrics
-from keras.models import load_model, Model
+from keras.models import load_model, Model, Sequential
+
 import os
 import csv
 import sys
@@ -11,7 +12,6 @@ if (len(sys.argv) != 5):
 	exit()
 else:
 	for i, arg in enumerate(sys.argv):
-		print(i, sys.argv[i])
 		if arg == "-i":
 			data_file = sys.argv[i + 1]
 		elif arg == "-c":
@@ -19,10 +19,12 @@ else:
 
 
 model1 = load_model(config_file)
-model2 = Model(model1.input, model1.layers[0].output)
-model2.summary()
+#model2 = Model(model1.input, model1.layers[0].output)
 
-model2.compile(optimizer='rmsprop', loss='mse')
+model2 = Sequential()
+model2.add(model1.layers[0])
+
+model2.summary()
 
 data = pd.read_csv(data_file, header=None).iloc[:, 1:]
 
