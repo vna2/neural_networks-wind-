@@ -1,15 +1,15 @@
-Algorithm: I1A1U1
-CLUSTER-1 {size: 2067,  centroid: 2017-02-20&15:00:00}
-CLUSTER-2 {size: 2144,  centroid: 2016-10-26&16:00:00}
-CLUSTER-3 {size: 960,  centroid: 2018-07-13&04:00:00}
-CLUSTER-4 {size: 4357,  centroid: 2018-02-18&20:00:00}
-CLUSTER-5 {size: 1608,  centroid: 2018-05-22&10:00:00}
-CLUSTER-6 {size: 798,  centroid: 2016-08-25&00:00:00}
-CLUSTER-7 {size: 2817,  centroid: 2016-11-17&16:00:00}
-CLUSTER-8 {size: 1091,  centroid: 2016-08-27&21:00:00}
-CLUSTER-9 {size: 975,  centroid: 2018-11-06&12:00:00}
-CLUSTER-10 {size: 3155,  centroid: 2017-11-13&22:00:00}
-CLUSTER-11 {size: 1804,  centroid: 2016-05-02&18:00:00}
-CLUSTER-12 {size: 2212,  centroid: 2016-05-22&21:00:00}
-clustering_time: 53.5542
-Silhouette: [0.249496, 0.166033, 0.0666494, 0.0245372, 0.163421, 0.257333, 0.231156, 0.234217, 0.138711, 0.146173, 0.271829, 0.13628, 0.17382]
+Algorithm: I2A2U1
+CLUSTER-1 {size: 1570,  centroid: 2018-04-23&03:00:00}
+CLUSTER-2 {size: 729,  centroid: 2016-04-28&11:00:00}
+CLUSTER-3 {size: 846,  centroid: 2017-12-16&01:00:00}
+CLUSTER-4 {size: 4324,  centroid: 2017-09-01&04:00:00}
+CLUSTER-5 {size: 1899,  centroid: 2017-05-09&18:00:00}
+CLUSTER-6 {size: 1428,  centroid: 2017-05-15&10:00:00}
+CLUSTER-7 {size: 1825,  centroid: 2018-06-19&21:00:00}
+CLUSTER-8 {size: 1218,  centroid: 2018-05-01&09:00:00}
+CLUSTER-9 {size: 214,  centroid: 2016-05-04&22:00:00}
+CLUSTER-10 {size: 2184,  centroid: 2018-12-16&16:00:00}
+CLUSTER-11 {size: 5592,  centroid: 2017-05-26&19:00:00}
+CLUSTER-12 {size: 2159,  centroid: 2018-06-28&03:00:00}
+clustering_time: 83.9362
+Silhouette: [0.153382, 0.15339, 0.328193, 0.238838, 0.0812149, 0.161542, 0.201687, 0.191675, 0.168382, 0.219189, 0.131029, 0.196875, 0.18545]
