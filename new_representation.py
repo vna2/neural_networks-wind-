@@ -35,7 +35,7 @@ results = model2.predict(data, batch_size=32)
 with open('new_representation.csv', 'w') as f, open(data_file, "r") as nn_repr:
 	values = csv.reader(nn_repr, delimiter=',')
 	for (result, value) in zip(results, values):
-		f.write(value[0] + ' ')
+		f.write(value[0] + ',')
 		i = 0
 		for res in result:
 			f.write(str(res))
