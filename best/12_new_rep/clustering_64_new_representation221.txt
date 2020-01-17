@@ -1,15 +1,15 @@
 Algorithm: I2A2U1
-CLUSTER-1 {size: 1884,  centroid: 2016-05-13&04:00:00&0.0}
-CLUSTER-2 {size: 1670,  centroid: 2016-11-03&17:00:00&0.0}
-CLUSTER-3 {size: 5687,  centroid: 2016-11-01&13:00:00&0.0}
-CLUSTER-4 {size: 2302,  centroid: 2018-08-31&23:00:00&0.0}
-CLUSTER-5 {size: 1160,  centroid: 2017-07-07&04:00:00&0.0}
-CLUSTER-6 {size: 1424,  centroid: 2016-04-24&00:00:00&0.0}
-CLUSTER-7 {size: 73,  centroid: 2018-02-13&20:00:00&0.0}
-CLUSTER-8 {size: 849,  centroid: 2017-07-20&00:00:00&0.0}
-CLUSTER-9 {size: 1179,  centroid: 2016-06-13&16:00:00&0.0}
-CLUSTER-10 {size: 2930,  centroid: 2018-04-14&13:00:00&0.0}
-CLUSTER-11 {size: 877,  centroid: 2017-12-05&01:00:00&0.0}
-CLUSTER-12 {size: 3953,  centroid: 2016-12-07&08:00:00&0.0}
+CLUSTER-1 {size: 1884,  centroid: 2016-05-13&04:00:00}
+CLUSTER-2 {size: 1670,  centroid: 2016-11-03&17:00:00}
+CLUSTER-3 {size: 5687,  centroid: 2016-11-01&13:00:00}
+CLUSTER-4 {size: 2302,  centroid: 2018-08-31&23:00:00}
+CLUSTER-5 {size: 1160,  centroid: 2017-07-07&04:00:00}
+CLUSTER-6 {size: 1424,  centroid: 2016-04-24&00:00:00}
+CLUSTER-7 {size: 73,  centroid: 2018-02-13&20:00:00}
+CLUSTER-8 {size: 849,  centroid: 2017-07-20&00:00:00}
+CLUSTER-9 {size: 1179,  centroid: 2016-06-13&16:00:00}
+CLUSTER-10 {size: 2930,  centroid: 2018-04-14&13:00:00}
+CLUSTER-11 {size: 877,  centroid: 2017-12-05&01:00:00}
+CLUSTER-12 {size: 3953,  centroid: 2016-12-07&08:00:00}
 clustering_time: 26.7976
 Silhouette: [0.155711, 0.11923, 0.63223, 0.110741, 0.209358, 0.152479, 0.359282, 0.281857, 0.179881, 0.155567, 0.242986, 0.151214, 0.229211]
