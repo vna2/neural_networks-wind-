@@ -24,12 +24,6 @@ def my_mean(array):
 	return sum/(len(array) - 1)
 
 
-# print(check_array([1,0,8]))
-
-
-# exit()
-
-
 if (len(sys.argv) != 7):
 	print("usage: python3 predict.py –i <input file> -a <actual file> -c <config file>")
 	exit()
