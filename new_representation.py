@@ -19,18 +19,16 @@ else:
 
 
 model1 = load_model(config_file)
-#model2 = Model(model1.input, model1.layers[0].output)
-
-model2 = Sequential()
-model2.add(model1.layers[0])
-
-model2.summary()
+model2 = Model(model1.input, model1.layers[0].output)
+#model2 = Sequential()
+#model2.add(model1.layers[0])
+#model2.summary()
 
 data = pd.read_csv(data_file, header=None).iloc[:, 1:]
 
 results = model2.predict(data, batch_size=32)
-#print(results.shape)
-#print(results)
+print(results.shape)
+print(results)
 
 with open('new_representation.csv', 'w') as f, open(data_file, "r") as nn_repr:
 	values = csv.reader(nn_repr, delimiter=',')
